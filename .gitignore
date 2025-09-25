@@ -1,11 +1,4 @@
 # Ignore all image files
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.svg
-*.webp
-*.ico
-data/raw/val/fire/desktop.ini
+results/outputs/
+
+data/raw/
