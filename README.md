@@ -58,18 +58,14 @@ tqdm
 
 ### Steps
 1. **Setup Environment**: Clone this repo and install dependencies.
-2. **Run Individual Notebooks**: For detailed steps and EDA:
- - Open Jupyter Notebook: `jupyter notebook`.
- - Run each `notebooks/IT_Number_[Technique].ipynb` in sequence (they build on prior outputs, e.g., resizing feeds into color balancing).
- - Each notebook includes code, justifications, outputs, and at least one EDA visualization (e.g., histograms for color channels, bar plots for class distribution).
-3. **Run Group Pipeline**: Execute `notebooks/group_pipeline.ipynb` for the full end-to-end preprocessing flow. It integrates all techniques, processes the raw data, and saves final outputs to `results/outputs/`.
+2. **Run Group Pipeline**: Execute `notebooks/group_pipeline.ipynb` for the full end-to-end preprocessing flow. It integrates all techniques, processes the raw data, and saves final outputs to `results/outputs/`.
  - Input: `data/raw/`.
  - Output: Processed datasets in `results/` subdirs, EDA plots in `results/eda_visualizations/`.
-4. **View Results**:
+3. **View Results**:
  - Visualizations: Check `results/eda_visualizations/` for PNG/JPEG files (e.g., class distribution bars, before/after image samples).
  - Logs: Optional execution logs in `results/logs/` (if generated).
  - Final Dataset: Processed images/features in `results/outputs/` (ready for model training).
-5. **Notes**:
+4. **Notes**:
  - Paths in scripts are hardcoded (e.g., 'E:\\SLIIT\\...'); update to your local paths.
  - Processing time: ~10-30 minutes per technique on CPU; faster on GPU.
  - For reproduction: Ensure the raw dataset is in place before running.
