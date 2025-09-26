@@ -1,7 +1,7 @@
 # Wildfire Detection Project
 
 ## Overview
-This project is part of the IT2011 Group Assignment for Artificial Intelligence and Machine Learning at SLIIT. The focus is on data cleaning, preprocessing, and Exploratory Data Analysis (EDA) for a wildfire detection dataset consisting of images classified as "fire" or "nofire." The goal is to prepare the dataset for machine learning models by applying various image preprocessing techniques, balancing classes, and generating visualizations to understand data distribution and quality.
+This project is part of the PGNO-48 Group Assignment for Artificial Intelligence and Machine Learning at SLIIT. The focus is on data cleaning, preprocessing, and Exploratory Data Analysis (EDA) for a wildfire detection dataset consisting of images classified as "fire" or "nofire." The goal is to prepare the dataset for machine learning models by applying various image preprocessing techniques, balancing classes, and generating visualizations to understand data distribution and quality.
 
 The preprocessing pipeline includes resizing images, color balancing, normalization, denoising, edge detection for feature enhancement, and data augmentation to address class imbalance. EDA visualizations include histograms, bar plots for class distribution, and sample image comparisons before/after processing.
 
@@ -9,33 +9,33 @@ This repository contains individual contributions from group members (each handl
 
 ## Dataset Details
 - **Source**: The Wildfire Dataset from Kaggle [](https://www.kaggle.com/datasets/elmadafri/the-wildfire-dataset).
-- **Description**: The dataset includes approximately 10,000+ images divided into "fire" (images showing wildfires) and "nofire" (images without fire). It is pre-split into train (70%), validation (15%), and test (15%) sets.
-  - Total images: ~7,000 train, ~1,500 val, ~1,500 test (exact counts may vary slightly after processing).
+- **Description**: The dataset includes approximately 2000+ images divided into "fire" (images showing wildfires) and "nofire" (images without fire). It is pre-split into train (70%), validation (15%), and test (15%) sets.
+  - Total images: ~1500 train, ~600 val, ~500 test (exact counts may vary slightly after processing).
   - Image format: JPG, various resolutions (resized to 600x600 in preprocessing).
   - Classes: Binary classification ("fire" vs. "nofire").
   - Challenges: Class imbalance (more "nofire" images), varying lighting/contrast, noise from real-world captures.
 - **Location in Repo**: Raw data is stored in `data/raw/`. Processed outputs are in `results/outputs/` and subdirectories for each technique (e.g., `results/color_balanced/`, `results/normalized/`, etc.).
 
 ## Group Members and Roles
-Our group (Group ID: [Insert Group ID, e.g., Group_01]) consists of 6 members. Each member handled one preprocessing technique, implemented it in their individual notebook, and contributed to the group pipeline. Roles are as follows:
+Our group 08 consists of 6 members. Each member handled one preprocessing technique, implemented it in their individual notebook, and contributed to the group pipeline. Roles are as follows:
 
 - **Member 1: IT24100260 - Resizing and Splitting**  
-  Handled image resizing to a uniform 600x600 resolution and validated dataset splits. Notebook: `notebooks/IT_Number_Resizing_and_Splitting.ipynb`.
+  Handled image resizing to a uniform 600x600 resolution and validated dataset splits. Notebook: `notebooks/IT24100260_Resizing_and_Splitting.ipynb`.
 
 - **Member 2: IT24100356 - Color Conversion/Balancing**  
-  Applied HSV color space conversion and histogram equalization on the Value channel to balance lighting/contrast. Notebook: `notebooks/IT_Number_Color_Conversion.ipynb`.
+  Applied HSV color space conversion and histogram equalization on the Value channel to balance lighting/contrast. Notebook: `notebooks/IT24100356_Color_Conversion.ipynb`.
 
 - **Member 3: IT24100368 - Normalization**  
-  Normalized pixel values using ImageNet means/std for model compatibility. Notebook: `notebooks/IT_Number_Normalization.ipynb`.
+  Normalized pixel values using ImageNet means/std for model compatibility. Notebook: `notebooks/IT24100368_Normalization.ipynb`.
 
 - **Member 4: IT24100288 - Denoising**  
-  Applied Gaussian blur and CLAHE enhancement to reduce noise and improve clarity. Notebook: `notebooks/IT_Number_Denoising.ipynb`.
+  Applied Gaussian blur and CLAHE enhancement to reduce noise and improve clarity. Notebook: `notebooks/IT24100288_Denoising.ipynb`.
 
 - **Member 5: IT24100327 - Edge Detection**  
-  Added a fourth channel with Sobel edge detection for feature enhancement. Notebook: `notebooks/IT_Number_Edge_Detection.ipynb`.
+  Added a fourth channel with Sobel edge detection for feature enhancement. Notebook: `notebooks/IT24100327_Edge_Detection.ipynb`.
 
 - **Member 6: IT24100304 - Data Augmentation**  
-  Augmented images (rotations, flips, brightness adjustments) to balance classes in the training set. Notebook: `notebooks/IT_Number_Data_Augmentation.ipynb`.
+  Augmented images (rotations, flips, brightness adjustments) to balance classes in the training set. Notebook: `notebooks/IT24100304_Data_Augmentation.ipynb`.
 
 All members collaborated on the integrated pipeline in `notebooks/group_pipeline.ipynb`, ensuring logical flow and commented code.
 
